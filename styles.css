@@ -13,11 +13,12 @@ h1 {
     margin: 20px 0 20px 10px
 }
 
-.notes {
+#notes-container {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     width: 70%;
+    max-width: 800px;
 }
 
 .note {
@@ -25,6 +26,7 @@ h1 {
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
+    line-height: 1.5
 }
 
 .note-title, .note-text {
@@ -42,9 +44,18 @@ h1 {
 }
 
 button {
-    font-size: 20px;
+    font-size: 22px;
     border: none;
     padding: 5px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+button:active {
+    background-color: rgb(189, 188, 188);
 }
 
 #new {
@@ -54,7 +65,7 @@ button {
   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
   box-sizing: border-box;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   padding: 8px 18px;
   margin: auto;
 }
