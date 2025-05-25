@@ -1,8 +1,8 @@
 function loadNotes() {
     let jsonNotes = localStorage.getItem("notes")
 
-    if (jsonNotes) {
-        let notes = JSON.parse(jsonNotes)
+    let notes = JSON.parse(jsonNotes)
+    if (notes != null) {
         for (let i = 0; i < notes.length; i++) {
             createNote(null, notes[i][0], notes[i][1])
         }
