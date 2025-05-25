@@ -44,7 +44,7 @@ h1 {
 }
 
 button {
-    font-size: 22px;
+    font-size: 18px;
     border: none;
     padding: 5px;
     border-radius: 10px;
@@ -76,4 +76,9 @@ button:active {
 
 #new:active {
   background-color: #298e46;
+}
+
+#save {
+    margin: 0 0 30px 10px;
+    width: 100px;
 }
